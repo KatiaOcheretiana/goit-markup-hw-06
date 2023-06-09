@@ -519,6 +519,7 @@ img {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-input {
@@ -534,9 +535,10 @@ img {
 
   font-size: 12px;
   line-height: 2;
-
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -555,21 +557,16 @@ img {
 
 .btn-subscribe {
   display: flex;
-  gap: 16px;
 
-  /* position: absolute;
-  bottom: 0;
-  right: 0; */
-
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  border-color: transparent;
+  border: none;
   background: var(--primary-color);
   border-radius: 4px;
 
-  margin-left: 24px;
   padding: 8px 24px;
   text-align: center;
+  align-items: center;
   justify-content: center;
 
   font-weight: 500;
@@ -586,6 +583,7 @@ img {
 
 .icon-subscribe {
   fill: var(--white-color);
+  margin-left: 16px;
 }
 
 .btn-subscribe:focus,
@@ -831,7 +829,7 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .input-wrap {
