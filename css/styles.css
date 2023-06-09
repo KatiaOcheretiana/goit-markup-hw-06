@@ -504,7 +504,7 @@ img {
 .footer-subscribe {
   width: 453px;
   height: 80px;
-  position: relative;
+  /* position: relative; */
 }
 
 .subscribe-title {
@@ -515,6 +515,10 @@ img {
   color: var(--white-color);
 
   margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
 }
 
 .footer-input {
@@ -553,9 +557,9 @@ img {
   display: flex;
   gap: 16px;
 
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  right: 0;
+  right: 0; */
 
   width: 165px;
   height: 40px;
@@ -714,6 +718,8 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -774,12 +780,12 @@ img {
 
   color: #2e2f42;
 
-  padding-top: 72px;
+  /* padding-top: 72px; */
   margin-bottom: 16px;
 }
 
 .modal-form {
-  margin: 16px 24px 24px 24px;
+  /* margin: 16px 24px 24px 24px; */
 }
 
 .modal-input {
@@ -790,11 +796,14 @@ img {
   padding-left: 38px;
 
   outline: transparent;
+  background-color: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-label {
+  display: block;
+
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -813,10 +822,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-comment:focus {
+  border-color: var(--primary-color);
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -850,7 +865,7 @@ img {
 }
 
 .check-box {
-  display: block;
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -881,6 +896,7 @@ img {
 
 .check-field {
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .modal-check:checked + .check-text .check-box {
@@ -890,14 +906,14 @@ img {
 }
 
 .form-btn {
-  width: 169px;
+  min-width: 169px;
   height: 56px;
-  margin: 24px auto;
+  margin: 0 auto;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--primary-color);
-  border-color: transparent;
+  border: none;
 
   font-weight: 500;
   font-size: 16px;
