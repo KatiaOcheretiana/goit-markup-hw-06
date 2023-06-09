@@ -829,7 +829,7 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -854,22 +854,26 @@ img {
 }
 
 .check-text {
-  display: flex;
+  /* display: flex; */
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--fill-customer-icons);
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: baseline;
 }
 
 .check-box {
   display: inline-flex;
+
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
 
-  display: flex;
   align-items: center;
   justify-content: center;
 
