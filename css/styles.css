@@ -829,6 +829,10 @@ img {
 }
 
 .modal-field {
+  margin-bottom: 8px;
+}
+
+.comment-field {
   margin-bottom: 16px;
 }
 
